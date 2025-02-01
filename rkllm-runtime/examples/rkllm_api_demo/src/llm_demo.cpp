@@ -178,7 +178,7 @@ int main(int argc, char **argv)
                 cout << input_str << endl;
             }
         }
-        // text = PROMPT_TEXT_PREFIX + input_str + PROMPT_TEXT_POSTFIX;
+         text = PROMPT_TEXT_PREFIX + input_str + PROMPT_TEXT_POSTFIX;
         text = input_str;
         rkllm_input.input_type = RKLLM_INPUT_PROMPT;
         rkllm_input.prompt_input = (char *)text.c_str();
